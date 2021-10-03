@@ -7,7 +7,9 @@ import {
   MenuList,
   MenuItem,
   Button,
+  Text,
   HStack,
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import React from "react";
 import Link from "next/link";
@@ -21,29 +23,29 @@ export function Header() {
       w="100%"
       as="header"
       maxWidth={1140}
-      h="20"
+      h="15"
       mx="auto"
       direction="row"
       justify="space-between"
       align="center"
-      my="20"
+      my="10"
     >
       <Box>
         <Heading as="h1">Logo</Heading>
       </Box>
       <HStack as="nav">
-        <ActiveLink href="">
-          <a>Home</a>
+        <ActiveLink href="/">
+          <ChakraLink>Home</ChakraLink>
         </ActiveLink>
-        <Link href="">
-          <a>Institucional</a>
-        </Link>
-        <Link href="">
-          <a>Serviços</a>
-        </Link>
-        <Link href="">
-          <a>Contato</a>
-        </Link>
+        <ActiveLink href="/institucional">
+          <ChakraLink>Institucional</ChakraLink>
+        </ActiveLink>
+        <ActiveLink href="/servicos">
+          <ChakraLink>Serviços</ChakraLink>
+        </ActiveLink>
+        <ActiveLink href="/contato">
+          <ChakraLink>Contato</ChakraLink>
+        </ActiveLink>
       </HStack>
     </Flex>
   );
