@@ -7,25 +7,68 @@ import styles from "./home.module.scss";
 
 const Home: NextPage = () => {
   return (
-    <Box className={styles.container}>
-      {/* <Carousel /> */}
+    <>
+      <Carousel />
+      <Box className={styles.container}>
+        <Heading as="h3" color="red.800">
+          Serviços
+        </Heading>
 
-      <Heading as="h3" color="red.800">
-        Serviços
-      </Heading>
+        <HomeContentLinks
+          imgAlt="teste"
+          imgSrc="/images/ser_regularizacao_obras_001.jpg"
+          title="Regularização"
+          links={[
+            {
+              title: "• Habite-se",
+              url: "http://alphasolucoes.com/servicos/habite-se/",
+            },
 
-      <HomeContentLinks
-        imgAlt="teste"
-        imgSrc="/images/ser_regularizacao_obras_001.jpg"
-        title="Regularização"
-        links={[
-          {
-            title: "teste",
-            url: "http://alphasolucoes.com/servicos/habite-se/",
-          },
-        ]}
-      />
-    </Box>
+            {
+              title: "• Averbação da construção",
+              url: "http://alphasolucoes.com/servicos/habite-se/",
+            },
+
+            {
+              title: "• Decadência de impostos",
+              url: "http://alphasolucoes.com/servicos/habite-se/",
+            },
+
+            {
+              title: "• Levantamento de acervo técnico",
+              url: "http://alphasolucoes.com/servicos/habite-se/",
+            },
+          ]}
+        />
+
+        <HomeContentLinks
+          imgAlt="teste"
+          imgSrc="/images/ser_financiamento_bancario_001.jpg"
+          title="Financiamento Bancário"
+          links={[
+            {
+              title: "• Habite-se",
+              url: "http://alphasolucoes.com/servicos/habite-se/",
+            },
+
+            {
+              title: "• Averbação da construção",
+              url: "http://alphasolucoes.com/servicos/habite-se/",
+            },
+
+            {
+              title: "• Decadência de impostos",
+              url: "http://alphasolucoes.com/servicos/habite-se/",
+            },
+
+            {
+              title: "• Levantamento de acervo técnico",
+              url: "http://alphasolucoes.com/servicos/habite-se/",
+            },
+          ]}
+        />
+      </Box>
+    </>
   );
 };
 
