@@ -10,7 +10,12 @@ const Home: NextPage = () => {
     <>
       <Carousel />
       <Box className={styles.container}>
-        <Heading as="h3" color="red.800">
+        <Heading
+          as="h3"
+          color="red.800"
+          marginLeft={[5, 0]}
+          marginBottom={[10, 20]}
+        >
           Serviços
         </Heading>
 

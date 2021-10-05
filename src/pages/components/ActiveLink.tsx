@@ -7,11 +7,13 @@ import { cloneElement, ReactElement } from "react";
 interface ActiveLinkProps extends LinkProps {
   children: ReactElement; // Quando recebemento apenas um componente no children
   shouldMatchExactHref?: boolean;
+  defaultColor?: string;
 }
 
 export function ActiveLink({
   children,
   shouldMatchExactHref = false,
+  defaultColor = "black",
   ...rest
 }: ActiveLinkProps) {
   const { asPath } = useRouter();
@@ -32,7 +34,7 @@ export function ActiveLink({
   return (
     <Link {...rest}>
       {cloneElement(children, {
-        color: isActive ? "red.800" : "black",
+        color: isActive ? "red.800" : defaultColor,
       })}
     </Link>
   );

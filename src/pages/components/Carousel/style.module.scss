@@ -1,22 +1,5 @@
 .swiper {
-  height: 626px;
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  height: 100%;
 
   border-top: 4px solid var(--chakra-colors-red-800);
 
@@ -27,6 +10,5 @@
     z-index: 999;
     text-align: left;
     font-weight: 700;
-    font-size: 1.8rem;
   }
 }

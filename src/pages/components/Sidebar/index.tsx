@@ -33,13 +33,14 @@ export function Sidebar() {
           fontSize="24"
           variant="unstyled"
           onClick={onOpen}
+          color="red.800"
           mr="2"
         ></IconButton>
         <Drawer isOpen={isOpen} placement="left" onClose={onClose}>
           <DrawerOverlay>
-            <DrawerContent bg="gray.800" p="4">
-              <DrawerCloseButton mt="6" />
-              <DrawerHeader>Navegação</DrawerHeader>
+            <DrawerContent bg="gray.750" p="4">
+              <DrawerCloseButton mt="6" color="red.800" />
+              <DrawerHeader color="white">Navegação</DrawerHeader>
 
               <DrawerBody>
                 <SidebarNav />

@@ -15,10 +15,13 @@ SwiperCore.use([Pagination]);
 
 export function Carousel() {
   return (
-    <Box marginBottom={[10, 20, 30]}>
+    <Box marginBottom={[10, 20, 30]} height={[180, 500, 626]}>
       <Swiper pagination={true} className={styles.swiper}>
         <SwiperSlide>
-          <Text color="red.800">
+          <Text
+            color="red.800"
+            fontSize={{ base: "1.2rem", md: "1.5rem", lg: "1.8rem" }}
+          >
             PROTEGER O PATRIMÔNIO
             <br />
             DOS SEUS HERDEIROS

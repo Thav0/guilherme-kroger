@@ -5,14 +5,11 @@ import {
   HStack,
   Link as ChakraLink,
   useBreakpointValue,
-  IconButton,
-  Icon,
 } from "@chakra-ui/react";
 import React from "react";
 
 import { ActiveLink } from "./ActiveLink";
 import { useSidebarDrawer } from "../../context/SidebarDrawerContext";
-import { RiMenuLine } from "react-icons/ri";
 import { Sidebar } from "./Sidebar";
 
 export function Header() {
