@@ -1,0 +1,15 @@
+a {
+  text-decoration: none !important;
+}
+
+.navHeader {
+  a {
+    font-weight: bold;
+    padding: 0.2rem 0.8rem;
+    &.active,
+    &:hover {
+      color: white;
+      background-color: var(--chakra-colors-red-800);
+    }
+  }
+}

@@ -5,6 +5,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import React from "react";
 import { SidebarDrawerProvider } from "../context/SidebarDrawerContext";
+import "../styles/common.scss";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

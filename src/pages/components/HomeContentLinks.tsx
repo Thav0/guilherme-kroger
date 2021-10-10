@@ -12,6 +12,7 @@ interface HomeContentLinksProps {
   imgAlt: string;
   title: string;
   links: Links[];
+  id: string;
 }
 
 export function HomeContentLinks({
@@ -19,11 +20,13 @@ export function HomeContentLinks({
   imgAlt,
   title,
   links,
+  id,
 }: HomeContentLinksProps) {
   return (
     <Flex
       direction={["column", "column", "row"]}
       className={styles.servicesContainer}
+      id={id}
     >
       <Box>
         <Image src={imgSrc} alt={imgAlt} width="570" height="330" />

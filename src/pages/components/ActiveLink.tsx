@@ -13,7 +13,7 @@ interface ActiveLinkProps extends LinkProps {
 export function ActiveLink({
   children,
   shouldMatchExactHref = false,
-  defaultColor = "black",
+  defaultColor = "var(--chakra-colors-red-800)",
   ...rest
 }: ActiveLinkProps) {
   const { asPath } = useRouter();
@@ -32,9 +32,11 @@ export function ActiveLink({
   }
 
   return (
-    <Link {...rest}>
+    <Link {...rest} style={{ textDecoration: "none" }}>
       {cloneElement(children, {
-        color: isActive ? "red.800" : defaultColor,
+        color: isActive ? "white" : defaultColor,
+        className: isActive ? "active" : "header-link",
+        fontSize: "1.1rem",
       })}
     </Link>
   );

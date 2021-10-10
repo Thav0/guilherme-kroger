@@ -23,6 +23,7 @@ const Home: NextPage = () => {
           imgAlt="teste"
           imgSrc="/images/ser_regularizacao_obras_001.jpg"
           title="Regularização"
+          id="regularizacao"
           links={[
             {
               title: "• Habite-se",
@@ -50,6 +51,7 @@ const Home: NextPage = () => {
           imgAlt="teste"
           imgSrc="/images/ser_financiamento_bancario_001.jpg"
           title="Financiamento Bancário"
+          id="financiamento-bancario"
           links={[
             {
               title: "• Habite-se",
