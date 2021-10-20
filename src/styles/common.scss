@@ -2,14 +2,25 @@ a {
   text-decoration: none !important;
 }
 
-.navHeader {
-  a {
-    font-weight: bold;
-    padding: 0.2rem 0.8rem;
-    &.active,
-    &:hover {
-      color: white;
-      background-color: var(--chakra-colors-red-800);
+.navContainer {
+  border-bottom: 4px solid var(--chakra-colors-red-800);
+  display: flex;
+  justify-content: center;
+  .navHeader {
+    a {
+      font-weight: bold;
+      padding: 0.2rem 0.8rem;
+      &.active,
+      &:hover {
+        color: white;
+        background-color: var(--chakra-colors-red-800);
+      }
     }
   }
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
 }

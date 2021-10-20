@@ -3,13 +3,11 @@ import type { NextPage } from "next";
 import { Carousel } from "./components/Carousel";
 import { HomeContentLinks } from "./components/HomeContentLinks";
 
-import styles from "./home.module.scss";
-
 const Home: NextPage = () => {
   return (
     <>
       <Carousel />
-      <Box className={styles.container}>
+      <Box className="container">
         <Heading
           as="h3"
           color="red.800"
